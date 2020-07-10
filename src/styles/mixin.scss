@@ -1,0 +1,8 @@
+@mixin flexContainer (
+  $justfyContent: flex-start,
+  $alignItem: center
+) {
+  display: flex;
+  justify-content: $justfyContent;
+  align-items: $alignItem;
+}

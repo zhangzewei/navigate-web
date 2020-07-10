@@ -1,0 +1,38 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixin.scss';
+.home-page {
+  height: 100%;
+
+  .slider {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+  }
+  
+  .logo {
+    @include flexContainer(center, center);
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+    color: $white;
+  }
+  
+  .site-layout {
+    margin-left: 200px;
+
+    .site-layout-background {
+      padding: 0;
+      background: $white;
+    }
+  
+    .layout-content {
+      margin: 24px 16px 0;
+      overflow: auto;
+    }
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
