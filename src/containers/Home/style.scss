@@ -18,12 +18,52 @@
     color: $white;
   }
   
+  .title {
+    color: #40a9ff;
+
+    > span {
+      color: #bfbfbf;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      > span {
+        color: #40a9ff;
+      }
+    }
+  }
+
+  .link-item {
+    border: 2px solid transparent;
+    padding: 8px;
+    display: block;
+    border-radius: 4px;
+    color: #333;
+    transition: border-color 0.1s ease-in-out;
+    
+    .link-title {
+      font-size: 20px;
+    }
+
+    .link-bref {
+      color: #bfbfbf;
+    }
+
+    &:hover {
+      .link-title {
+        color: #40a9ff;
+      }
+      border-color: #40a9ff;
+    }
+  }
+  
   .site-layout {
     margin-left: 200px;
 
     .site-layout-background {
-      padding: 0;
-      background: $white;
+      padding: 0 20px;
+      scroll-behavior: smooth;
     }
   
     .layout-content {
