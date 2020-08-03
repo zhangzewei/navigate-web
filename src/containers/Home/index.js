@@ -17,7 +17,7 @@ const Home = () => {
 
   const renderLinks = (links) => links && links.map(link => (
     <Col span={4}>
-      <a className="link-item" href={link.link} target="blank">
+      <a className="link-item" href={link.link} key={link.name} target="blank">
         <div className="link-title">{link.name}</div>
         <div className="link-bref">{link.bref}</div>
       </a>
