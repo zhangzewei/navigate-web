@@ -19,17 +19,17 @@
   }
   
   .title {
-    color: #40a9ff;
+    color:$blue;
 
     > span {
-      color: #bfbfbf;
+      color: $light-gray;
     }
 
     &:hover {
       cursor: pointer;
 
       > span {
-        color: #40a9ff;
+        color: $blue;
       }
     }
   }
@@ -47,14 +47,14 @@
     }
 
     .link-bref {
-      color: #bfbfbf;
+      color: $light-gray;
     }
 
     &:hover {
       .link-title {
-        color: #40a9ff;
+        color:$blue;
       }
-      border-color: #40a9ff;
+      border-color: $blue;
     }
   }
   
