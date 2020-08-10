@@ -16,8 +16,8 @@ const Home = () => {
   ));
 
   const renderLinks = (links) => links && links.map(link => (
-    <Col span={4}>
-      <a className="link-item" href={link.link} key={link.name} target="blank">
+    <Col span={4} key={link.name}>
+      <a className="link-item" href={link.link} target="blank">
         <div className="link-title">{link.name}</div>
         <div className="link-bref">{link.bref}</div>
       </a>
@@ -27,10 +27,10 @@ const Home = () => {
   const renderMainContainer = () => menus.map(menu => {
     return (
       <Card
+        key={`title-${menu.id}`}
         title={
           <h2
             id={menu.id}className="title"
-            key={`title-${menu.id}`}
           ><span># </span>{menu.name}</h2>
         }
         style={{ width: '100%', marginBottom: '20px', borderRadius: '8px' }}

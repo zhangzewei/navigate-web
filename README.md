@@ -2,5 +2,6 @@
 展示各个方向的学习网页
 
 ## start 
-```yarn && yarn start
+```
+yarn && yarn start
 ```
